@@ -16,3 +16,23 @@ const initialValue = 0;
 const sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
 
 console.log(sumWithInitial); //Expected output: 10
+
+const shoppingCart = [
+    {
+        item:'js',
+        price:599
+    },
+
+    {
+        item:'python',
+        price:299
+    },
+
+    {
+        item:'cpp',
+        price:999
+    }
+]
+
+const cost = shoppingCart.reduce((acc, item)=> acc + item.price, 0);
+console.log(cost); //1897
